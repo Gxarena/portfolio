@@ -10,7 +10,7 @@ interface SpotlightOverlayProps {
 export const SpotlightOverlay: React.FC<SpotlightOverlayProps> = ({
   enabled = true,
   size = 600,
-  opacity = 0.3,
+  opacity = 0.2,
   blendMode = 'screen'
 }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

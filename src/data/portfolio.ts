@@ -61,7 +61,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'Email',
-    url: 'mailto:gianmarco.arena@example.com',
+    url: 'mailto:gianmarco88arena@gmail.com',
     icon: 'mail'
   }
 ];
@@ -72,10 +72,11 @@ export const experiences: Experience[] = [
     company: 'Aesthera Tech',
     role: 'Frontend Developer',
     period: 'Mar 2025 – Present',
-    description: 'Built and launched an AI-powered widget for pre-clinic botox visualization, embedded in real-world client websites.',
+    description: 'Built and launched an AI-powered virtual try-on widget for injectable treatments, leveraged by clinics in North America to improve the patient experience and increase bookings.',
     technologies: ['React', 'Tailwind', 'Vite', 'iFrame Embeds'],
     achievements: [
       'Led UI development for widget and marketing site from scratch',
+      'Built comprehensive user dashboard for widget customization, analytics, and subscription management',
       'Enabled real-time AI botox previews for users using clinic-branded UI',
       'Delivered responsive builds with full embedding compatibility'
     ]
@@ -85,8 +86,8 @@ export const experiences: Experience[] = [
     company: 'Falcon Bot',
     role: 'Software Developer Intern',
     period: 'Jul 2024 – Sep 2024',
-    description: 'Built and scaled backend services for a Telegram-based crypto bot managing $400K+ trading volume.',
-    technologies: ['FastAPI', 'Docker', 'GCP', 'Redis', 'Telegram API'],
+    description: 'Built and scaled backend services for a Telegram-based crypto trading platform managing $400K+ trading volume.',
+    technologies: ['Python', 'FastAPI', 'Docker', 'GCP', 'Redis', 'Telegram API'],
     achievements: [
       'Reduced backend latency 40% via Redis caching',
       'Shipped wallet manager with real-time portfolio tracking',
@@ -98,7 +99,7 @@ export const experiences: Experience[] = [
     company: 'Dopple Labs',
     role: 'Software Developer Intern',
     period: 'Mar 2024 – Jun 2024',
-    description: 'Supported internal AI tooling and subscription infra at scale for 300K+ users.',
+    description: 'Supported internal AI tooling and subscription infra at scale for 300K+ users on the Dopple AI chatbot platform.',
     technologies: ['React', 'FastAPI', 'Stripe', 'Python', 'Zilliz'],
     achievements: [
       'Built moderator admin panel to flag content with 2x faster turnaround',
