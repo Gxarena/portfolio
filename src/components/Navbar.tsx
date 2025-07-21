@@ -31,11 +31,31 @@ const Navbar = ({ darkMode, toggleDarkMode }: NavbarProps) => {
   ];
 
   const scrollToSection = (href: string) => {
+    console.log('Scrolling to:', href); // Debug log
     const element = document.querySelector(href);
+    console.log('Element found:', element); // Debug log
+    
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const navbarHeight = 64; // Height of the navbar (h-16 = 64px)
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navbarHeight;
+      
+      console.log('Scrolling to position:', offsetPosition); // Debug log
+      
+      // Close mobile menu first, then scroll
+      setIsOpen(false);
+      
+      // Small delay to ensure menu closes before scrolling
+      setTimeout(() => {
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }, 100);
+    } else {
+      console.log('Element not found for:', href); // Debug log
+      setIsOpen(false);
     }
-    setIsOpen(false);
   };
 
   const handleThemeToggle = () => {
