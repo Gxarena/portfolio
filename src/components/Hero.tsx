@@ -143,7 +143,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+            className="absolute bottom-5 left-1/2 transform -translate-x-1/2"
           >
                         <motion.button
               onClick={() => {

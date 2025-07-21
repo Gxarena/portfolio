@@ -22,6 +22,11 @@ const Projects = () => {
   };
 
   const getProjectImage = (imagePath: string | any) => {
+    // Handle null/undefined images
+    if (!imagePath) {
+      return `https://via.placeholder.com/600x400/0ea5e9/ffffff?text=Project+Image`;
+    }
+    
     // If imagePath is already a URL (imported image), return it directly
     if (typeof imagePath === 'string' && imagePath.startsWith('http')) {
       return imagePath;

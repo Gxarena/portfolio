@@ -73,7 +73,7 @@ const Settings = () => {
                   ) : (
                     <EyeOff size={18} className="text-light-500 dark:text-dark-400" />
                   )}
-                  <span className="text-light-700 dark:text-dark-300 text-sm">
+                  <span className="text-light-700 dark:text-dark-300 text-sm mr-4">
                     Spotlight Cursor
                   </span>
                 </div>

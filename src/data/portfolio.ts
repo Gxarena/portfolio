@@ -1,5 +1,7 @@
 import chefliPreview from '../assets/chefli-preview.jpg';
 import voteChainPreview from '../assets/VoteChain.png';
+import coverlyPreview from '../assets/coverly-ai.svg';
+import subtrackerPreview from '../assets/Subtracker.png';
 
 export interface Project {
   id: string;
@@ -115,6 +117,26 @@ export const projects: Project[] = [
     image: chefliPreview,
     tags: ['React Native', 'Expo', 'AI', 'Firebase'],
     github: 'https://apps.apple.com/ca/app/chefli/id6740599710',
+    featured: true
+  },
+  {
+    id: 'coverly-ai',
+    title: 'Coverly AI',
+    description: 'AI-powered cover letter generator',
+    longDescription: 'A powerful Chrome extension that automatically extracts job descriptions from job boards and generates personalized cover letters using AI.',
+    image: coverlyPreview,
+    tags: ['React', 'Tailwind', 'TypeScript', 'Firebase', 'Python', 'FastAPI', 'OpenAI', 'Chrome Extension'],
+    github: 'https://github.com/Gxarena/coverly-ai',
+    featured: true
+  },
+  {
+    id: 'subtracker-telegram-bot',
+    title: 'Subtracker Telegram Bot',
+    description: 'Automated subscription-based access control for Telegram communities',
+    longDescription: `A production-grade Telegram bot built for a VIP sports betting group. It handles subscription payments, validates access in real-time, and automatically removes users when their subscription expires. The bot also offers status checks and onboarding flows, fully integrated into the group chat for seamless admin-free operation.`,
+    image: subtrackerPreview,
+    tags: ['Python', 'Stripe API', 'Telegram API', 'GCP', 'Webhooks'],
+    github: 'https://github.com/Gxarena/AMBetz-Telegram-Bot',
     featured: true
   },
   {
