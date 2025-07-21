@@ -96,16 +96,7 @@ export const SoundProvider: React.FC<SoundProviderProps> = ({ children, darkMode
     }
   };
 
-  const playCardClick = () => {
-    if (isSoundEnabled && !prefersReducedSound) {
-      try {
-        playPlungerImmediate();
-      } catch (error) {
-        // Fallback to Web Audio API
-        playSound('cardClick');
-      }
-    }
-  };
+  // Removed playCardClick as it's no longer used
 
   const toggleSound = () => {
     setIsSoundEnabled(!isSoundEnabled);
