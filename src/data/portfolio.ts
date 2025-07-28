@@ -1,6 +1,6 @@
 import chefliPreview from '../assets/chefli-preview.jpg';
 import voteChainPreview from '../assets/VoteChain.png';
-import coverlyPreview from '../assets/coverly-ai.svg';
+import coverlyPreview from '../assets/coverly-preview.png';
 import subtrackerPreview from '../assets/Subtracker.png';
 
 export interface Project {
